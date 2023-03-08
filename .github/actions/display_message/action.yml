@@ -4,5 +4,6 @@ inputs:
   message:
     description: 'Mensagem a ser exibida'
     required: true
-runs: |
-      echo "hello world" 
+runs:
+  using: 'docker'
+  image: '../../../Dockerfile

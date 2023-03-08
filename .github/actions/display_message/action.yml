@@ -1,9 +1,10 @@
-name: 'Display Message'
-description: Display an input message from user
+name: 'Display message'
+description: Display message from user
 inputs:
   message:
-    description: 'Mensagem a ser exibida'
+    description: 'Input message'
     required: true
+    default: 'hi'
 runs:
   using: 'docker'
-  image: '../../../Dockerfile
+  image: '../../../Dockerfile'

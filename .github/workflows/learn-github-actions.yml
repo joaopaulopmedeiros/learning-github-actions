@@ -2,7 +2,7 @@ on:
   workflow_dispatch:
     inputs:
       message:
-        description: 'Mensagem a ser exibida'
+        description: 'Input message'
         required: true
 
 name: 'Learn Github Actions - Message'

@@ -6,6 +6,6 @@ COPY . .
 
 RUN ls -la
 
-RUN chmod +x /app/entrypoint.sh
+RUN chmod +x /app/run.sh
 
 ENTRYPOINT [ "/app/run.sh" ]

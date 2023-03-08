@@ -5,7 +5,8 @@ on:
         description: 'Input message'
         required: true
 
-name: 'Learn Github Actions - Message'
+name: 'Workflow Dispatch - Display Input Message'
+run-name: ${{ github.actor }} is displaying a message
 jobs:
   test:
     name: Display Message

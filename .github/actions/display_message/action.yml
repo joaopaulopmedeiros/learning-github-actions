@@ -5,4 +5,4 @@ inputs:
     description: 'Mensagem a ser exibida'
     required: true
 run: |
-      echo "${{ github.event.inputs.message }}" 
+      echo "$message" 

@@ -5,4 +5,4 @@ inputs:
     description: 'Mensagem a ser exibida'
     required: true
 runs: |
-      echo "$message" 
+      echo "hello world" 

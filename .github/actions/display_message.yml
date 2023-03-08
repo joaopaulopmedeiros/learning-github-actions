@@ -1,0 +1,8 @@
+name: 'Display Message'
+description: Display an input message from user
+inputs:
+  message:
+    description: 'Mensagem a ser exibida'
+    required: true
+run: |
+      echo "${{ github.event.inputs.message }}" 

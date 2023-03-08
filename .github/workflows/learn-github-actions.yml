@@ -1,13 +1,23 @@
-name: learn-github-actions
-run-name: ${{ github.actor }} is learning GitHub Actions
-on: [push]
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 'Mensagem a ser exibida'
+        required: true
+
+name: 'Learn Github Actions - Message'
 jobs:
-  check-bats-version:
+  test:
+    name: Display Message
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Checkout Publish Repo
+        uses: actions/checkout@v2
+
+      - name: Display Message
+        uses: ./.github/actions/display_message
         with:
-          node-version: '14'
-      - run: npm install -g bats
-      - run: bats -v
+          message: ${{ github.event.inputs.message }}

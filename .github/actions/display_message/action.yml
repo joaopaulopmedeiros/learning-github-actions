@@ -4,5 +4,5 @@ inputs:
   message:
     description: 'Mensagem a ser exibida'
     required: true
-run: |
+runs: |
       echo "$message" 
